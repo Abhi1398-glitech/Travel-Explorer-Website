@@ -1,0 +1,68 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Travel Explorer ✈️</title>
+  <link rel="stylesheet" href="style.css" />
+</head>
+<body>
+  <header class="header">
+    <h1>🌍 Travel Explorer</h1>
+    <p>Plan your dream destination</p>
+  </header>
+
+  <main>
+    <!-- Search form -->
+    <section id="search-section" class="card">
+      <h2>Plan Your Trip</h2>
+      <form id="travel-form">
+        <div class="input-group">
+          <input type="text" id="destination-input" placeholder="Enter a destination..." required />
+        </div>
+
+        <div class="options">
+          <select id="duration">
+            <option value="3 days">3 Days</option>
+            <option value="1 week">1 Week</option>
+            <option value="2 weeks">2 Weeks</option>
+            <option value="1 month">1 Month</option>
+          </select>
+
+          <select id="travel-type">
+            <option value="solo">🧍 Solo</option>
+            <option value="family">👨‍👩‍👧 Family</option>
+            <option value="friends">👫 Friends</option>
+            <option value="romantic">❤️ Romantic</option>
+          </select>
+        </div>
+
+        <button type="submit">Explore</button>
+      </form>
+    </section>
+
+    <!-- Results -->
+    <section id="results" class="card" style="display:none;">
+      <h2>Your Trip Details</h2>
+
+      <div class="loader" id="loader" style="display:none;"></div>
+
+      <div class="result-card">
+        <img id="result-img" src="" alt="Destination Image" />
+        <div class="result-content">
+          <h3 id="result-title"></h3>
+          <p id="result-weather"></p>
+          <p id="result-travel"></p>
+          <p class="tip"></p>
+        </div>
+      </div>
+    </section>
+  </main>
+
+  <footer>
+    <p>Built with 💙 By Abhishek using OpenWeather & Unsplash APIs</p>
+  </footer>
+
+  <script src="main.js"></script>
+</body>
+</html>
