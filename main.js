@@ -17,7 +17,7 @@ form.addEventListener("submit", async (e) => {
 
   try {
     // 1️⃣ Fetch weather data from OpenWeather
-    const weatherApiKey = "1f1a9ad5df06a35ab6239e4b0146075d";
+    const weatherApiKey = "....";
     const weatherUrl = `https://api.openweathermap.org/data/2.5/weather?q=${input}&units=metric&appid=${weatherApiKey}`;
     console.log("Fetching weather from:", weatherUrl);
 
@@ -51,7 +51,7 @@ form.addEventListener("submit", async (e) => {
     }
 
     // 3️⃣ Fetch image from Unsplash
-    const unsplashAccessKey = "4GFKZ4l06E6raZ8KPWon9kh4Lvam1xu47cpIligRRoc";
+    const unsplashAccessKey = "....";
     const imgUrl = await fetch(`https://api.unsplash.com/photos/random?query=${input}&client_id=${unsplashAccessKey}&orientation=landscape`)
       .then(res => res.json())
       .then(data => {
